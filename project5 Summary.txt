@@ -1,0 +1,44 @@
+Summary of the Wine Dataset Code
+This project was based on the Wine Quality Dataset from Kaggle, which holds information about various chemical properties of red wine samples such as acidity, sugar content, and alcohol percentage.
+
+The idea was that wines that were similar should be clustered together without giving any labels of quality. We went through the following steps:
+
+- Loaded the data and dropped the quality column since no labels are to be used in unsupervised learning.
+- Standardized the features to treat all columns equally.
+- Used PCA to convert the 11 features into 2 components to better visualize any patterns.
+- Chose the best number of clusters, k, using the Elbow Method.
+
+And then, K-Means was run on the data for clustering, and the clusters were visualized.
+
+In addition, the Silhouette Score was used to check how well our clustering separated the types of wines.
+
+This approach is generally utilized to uncover patterns in data when the data is unlabeled.
+
+A summary of the African Hairstyle Clustering Study.
+The research paper, "Clustering an African Hairstyle Dataset Using PCA and K-Means," tackles the categorization of African hairstyles for women with caution by using the methods of unsupervised learning.
+
+This is what the paper achieved:
+
+Images of African women were obtained from the Figaro1K dataset, focusing on different hairstyles, such as kinky textures, braids, and dreadlocks.
+
+Utilized the Haar Cascade algorithm for face detection to identify facial areas.
+
+Processed the images by resizing them, converting them to grayscale, and flattening them into 1D arrays.
+
+Used PCA to reduce the dimensions of the features of the image without losing most of the significant variation.
+
+Used K-Means clustering algorithm to classify facial images systematically that share similar visual features.
+
+Lastly, used the Elbow Method and Silhouette Score to determine the performance of clustering.
+
+The aim of this research was to research the classification of African women's facial features and hair textures with the aim of helping in the establishment of hairstyle recommendation systems that are African compliant.
+
+The two are connected interestingly; while the wine code and the hairstyle paper deal with essentially different types of data (numeric vs. image), both of them are adhering to an almost identical machine learning paradigm:
+
+They both employ PCA as a dimension-reduction tool.
+
+Both of these approaches apply K-Means clustering to find natural clusters in the data.
+
+They both use Elbow and Silhouette methods to quantify clustering quality.
+
+In short, the wine dataset is just a standard tabular case, while the research paper is a real application of the same concepts to culturally relevant image data.
